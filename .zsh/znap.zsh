@@ -10,7 +10,9 @@ znap prompt
 
 # Plugins
 znap source marlonrichert/zsh-autocomplete
-znap eval zoxide "$(zoxide init zsh --cmd cd)"
+znap eval zoxide 'zoxide init zsh --cmd cd'
+znap eval mise 'mise activate zsh'
+
 
 # Completions
 znap install zsh-users/zsh-completions
