@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+
+[user]
+	email = tristan.jockel@icloud.com
+	name = Tristan Jockel
+	signingKey = /home/tristanjockel/.ssh/id_ecdsa_sk_github
+
+[gpg]
+	format = ssh
