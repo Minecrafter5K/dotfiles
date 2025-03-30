@@ -3,6 +3,8 @@
 [[ -f ~/.zsh/env.zsh ]] && source ~/.zsh/env.zsh
 [[ -f ~/.zsh/znap.zsh ]] && source ~/.zsh/znap.zsh
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 
 # keybinds
 bindkey '^[[1;5D' backward-word
