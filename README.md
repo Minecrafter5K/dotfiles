@@ -29,3 +29,13 @@ sudo locale-gen de_DE.UTF-8
 source ~/.zshrc
 brew install zoxide bat
 ```
+
+# brew for sudo/root
+
+To use brew commands with sudo/root you need to add them to PATH:
+
+```bash
+sudo nano /etc/sudoers
+```
+
+After `Defaults  secure_path` add `/home/linuxbrew/.linuxbrew/bin`
