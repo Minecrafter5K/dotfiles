@@ -8,15 +8,6 @@ Install needed dependencies:
 sudo apt install -y git stow
 ```
 
-(Optional) Setup git:
-
-```bash
-git config --global user.email "tristan.jockel@icloud.com"
-git config --global user.name "Tristan Jockel"
-
-```
-
-
 Clone the repository:
 
 ```bash
