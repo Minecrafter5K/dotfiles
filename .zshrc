@@ -1,3 +1,4 @@
+[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 [[ -f ~/.zsh/env.zsh ]] && source ~/.zsh/env.zsh
 [[ -f ~/.zsh/znap.zsh ]] && source ~/.zsh/znap.zsh
