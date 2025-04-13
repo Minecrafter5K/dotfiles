@@ -10,10 +10,16 @@ znap prompt
 
 # Plugins
 znap source marlonrichert/zsh-autocomplete
+znap source zsh-users/zsh-autosuggestions
 znap eval zoxide 'zoxide init zsh --cmd cd'
 if ! type "mise" > /dev/null; then
   znap eval mise 'mise activate zsh'
 fi
+## OMZ
+znap source ohmyzsh/ohmyzsh plugins/sudo
+znap source ohmyzsh/ohmyzsh plugins/command-not-found
+znap source ohmyzsh/ohmyzsh plugins/ssh-agent
+
 
 # Completions
 znap install zsh-users/zsh-completions
