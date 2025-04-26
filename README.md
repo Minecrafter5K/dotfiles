@@ -5,7 +5,8 @@
 Install needed dependencies:
 
 ```bash
-sudo apt install -y git stow
+sudo apt install -y git stow zsh
+sudo curl -sS https://starship.rs/install.sh | sudo sh
 ```
 
 Clone the repository:
@@ -23,7 +24,8 @@ stow .
 
 Some setup:
 
-```bash
+```zsh
+chsh -s $(which zsh)
 sudo locale-gen de_DE.UTF-8
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 source ~/.zshrc
@@ -34,8 +36,13 @@ brew install zoxide bat
 
 To use brew commands with sudo/root you need to add them to PATH:
 
-```bash
-sudo nano /etc/sudoers
+```zsh
+sudo visudo
 ```
 
-After `Defaults  secure_path` add `/home/linuxbrew/.linuxbrew/bin`
+After `Defaults  secure_path` add `:/home/linuxbrew/.linuxbrew/bin`
+
+# debug zsh startup timing
+```zsh
+time ZSH_DEBUGRC=1 zsh -i -c exit
+```

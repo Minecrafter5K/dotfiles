@@ -1,10 +1,12 @@
-[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
-[[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
-[[ -f ~/.zsh/env.zsh ]] && source ~/.zsh/env.zsh
-[[ -f ~/.zsh/znap.zsh ]] && source ~/.zsh/znap.zsh
-[[ -f ~/.zsh/step_ssh_completions.zsh ]] && source ~/.zsh/step_ssh_completions.zsh
+# --- TIMING ---
+if [[ -n "$ZSH_DEBUGRC" ]]; then
+  zmodload zsh/zprof
+fi
+# --- TIMING ---
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+[[ -f ~/.zsh/env.zsh ]] && source ~/.zsh/env.zsh
+[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
+[[ -f ~/.zsh/znap.zsh ]] && source ~/.zsh/znap.zsh
 
 
 # keybinds
@@ -43,3 +45,11 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+
+# --- TIMING ---
+if [[ -n "$ZSH_DEBUGRC" ]]; then
+  echo ""
+  zprof
+  echo ""
+fi
+# --- TIMING ---
