@@ -1,4 +1,5 @@
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/opt/coreutils/libexec/gnubin:$PATH"
 
 export LANG="de_DE.utf8"
 
