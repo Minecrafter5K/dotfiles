@@ -28,6 +28,7 @@ Some setup:
 chsh -s $(which zsh)
 sudo locale-gen de_DE.UTF-8
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 source ~/.zshrc
 brew install zoxide bat bc jq coreutils gawk
 ```
